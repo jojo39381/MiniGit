@@ -1,0 +1,17 @@
+# Status with two adds
+I myset.inc
+> commit "two files"
+<<<
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

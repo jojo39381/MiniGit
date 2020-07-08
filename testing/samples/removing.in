@@ -1,0 +1,23 @@
+# Status with two adds
+I myset.inc
+> commit "two files"
+<<<
++ file2 wug.txt
+> add file2
+<<<
+> rm file2
+<<<
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+file2
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

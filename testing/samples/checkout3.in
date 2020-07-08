@@ -1,0 +1,14 @@
+# Status with two adds
+I myset.inc
+> commit "two files"
+<<<
+> branch another
+<<<
++ file2 a.txt
+> add file2
+<<<
+> commit "file2 changed"
+<<<
+> checkout another
+<<<
+= file2 b.txt

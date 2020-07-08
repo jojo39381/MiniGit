@@ -1,0 +1,43 @@
+# Status with two adds
+I myset.inc
+> commit "two files"
+<<<
++ file2 e.txt
+> add file2
+<<<
+> commit "changed to e"
+<<<
++ file2 a.txt
+> add file2
+<<<
+> commit "changed to a"
+<<<
+D UID "[a-f0-9]+"
+D HEADER "commit (${UID})"
+D DATE "Date: \w\w\w \w\w\w \d+ \d\d:\d\d:\d\d \d\d\d\d [-+]\d\d\d\d"
+> log
+===
+${HEADER}
+${DATE}
+changed to a
+
+===
+${HEADER}
+${DATE}
+changed to e
+
+===
+${HEADER}
+${DATE}
+two files
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+D UID2 "${2}"
+> checkout ${UID2} -- file2
+<<<
+= file2 e.txt
