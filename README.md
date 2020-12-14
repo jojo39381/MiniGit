@@ -1,5 +1,5 @@
-# MiniGit
-### functionalities: git add, merge, checkout, commit, log, branch, status, and more!
+## MiniGit 
+##### functionalities: git add, merge, checkout, commit, log, branch, status, and more
 
 ## To Run The Program:
 ### 1. go to the Minigit folder -> run javac gitlet.Main.java
